@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #36454F;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+}
+
+header {
+    max-width: 960px;
+    margin: 2vw auto;
+    border-bottom: 1px solid;
+}
+
+.grid-container {
+    max-width: 960px;
+    margin: 2vw auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+}
+
+article img {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 2vw;
+}
+
+article.cover {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 3vh;
+}
+
+article p, article h3, article h2 {
+    margin: 1vw 2vw;
+}
