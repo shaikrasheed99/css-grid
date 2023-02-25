@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: #36454F;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-column-gap: 2vw;
+}
+
+header {
+    font-size: 1.6vw;
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+nav {
+    padding: 1vw;
+    padding-top: 2vw;
+    border-right: 1px solid;
+}
+
+nav li {
+    padding: 0 0 1vw 1.5vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+article {
+    padding: 1vw;
+}
+
+article h1 {
+    font-size: 2.8vw;
+}
+
+article img {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 1vw;
+}
+
+article p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    padding-top: 1vw;
+}
+
+aside {
+    padding: 1vw;
+    border-left: 1px solid;
+    font-size: 1.5vw;
+}
+
+footer {
+    font-size: 1.6vw;
+    grid-column: span 3;
+    text-align: center;
+    border-top: 1px solid;
+    margin: 0;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+    nav {
+        grid-column: span 3;
+        border: 0;
+        border-bottom: 1px solid;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 2vw;
+    }
+
+    article {
+        grid-column: span 2;
+        margin: 2vw;
+    }
+}
+
+@media (max-width: 960px) {
+    nav, article, aside {
+        grid-column: span 3;
+    }
+
+    aside {
+        border: 0;
+        border-top: 1px solid;
+    }
+}
